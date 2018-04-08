@@ -1,0 +1,145 @@
+/* Media query for Mobile screens Top-bar */
+
+@media only screen
+and (max-width: 480px) {
+  .top-bar-desktop {
+    display: none;}
+  .top-bar-mobile {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 4rem;
+    width: 480px;
+    background-color: white;
+  }
+}
+/* Media query for Mobile screens banner */
+
+@media only screen
+and (max-width: 480px) {
+  .banner-desktop {
+    display: none;}
+  .banner-mobile {
+    display: block;
+    max-width: 30rem;
+    height: 16rem;
+    background-image: url("/Users/Alessandro/Desktop/Projects/Colmar/resources/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .headline-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #D3D4D0;
+    height: 18rem;
+  }
+  .headline-mobile h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #404040;
+  }
+  .headline-mobile h1, h4 {
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .button-mobile {
+    background-color: #595959;
+    height: 2rem;
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #button-mobile {
+      font-size: 1rem;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .button-mobile:hover{
+      background-color: #242424;
+      transition: background-color 0.5s linear;
+    }
+  }
+  /* Media query for Mobile screens info main */
+
+  @media only screen
+  and (max-width: 480px) {
+  .info-main-desktop {
+    display: none;
+  }
+  .info-main-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    background-color: #EBEBE8;
+    border-bottom: 0.1rem solid #D6D4CD;
+  }
+  .info-main-mobile img{
+    width: 28rem;
+  }
+  .info-main-mobile-text {
+    margin-left: 1rem;
+    width: 28rem;
+  }
+  .info-main-mobile-text h1, h4, p {
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .info-main-mobile-text h1 {
+    font-size: 2rem;
+    color: #404040;
+    margin-bottom: 1rem;
+  }
+  .info-main-mobile-text p {
+    font-size: 1rem;
+    color: blue;
+    margin-top: 1rem;
+  }
+  .info-main-mobile-text p:hover {
+  text-decoration: underline;
+  }
+  }
+  /* Media query for Mobile screens courses*/
+
+  @media only screen
+  and (max-width: 480px) {
+   .courses-desktop {
+     display: none;
+   }
+   .courses-mobile {
+     height: 35rem;
+     width: 30rem;
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 2rem;
+   }
+   .courses-headline h1{
+     padding-top: 2rem;
+     vertical-align: center;
+   }
+   .course-box {
+     width: 26rem;
+     height: 5rem;
+     background-color: #D3D4D0;
+     margin-top: 0.5rem;
+   }
+   .course-box h2 {
+     font-size: 1.5rem;
+     margin-left: 1rem;
+     color: #404040;
+     text-align: left;
+     padding-top: 1rem;
+   }
+   .course-box h2:hover {
+     text-decoration: underline;
+  }
+}
